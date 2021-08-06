@@ -1,0 +1,176 @@
+//------------------- main ------------------------
+
+.contenedor-indexMain__titulo1 {
+  @include titulo1;
+}
+
+.contenedor-indexMain__carruselIndex {
+  margin: 0.3rem;
+}
+
+//------------------ section ---------------------
+
+.contenedor-indexSection__titulo1 {
+  @include titulo1;
+}
+
+.contenedor-indexSection__contenedor-albunes {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: nowrap;
+  align-items: center;
+  margin: 0 0 0 2%;
+}
+
+.contenedor-albunes__Albunes1 {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+}
+
+.contenedor-albunes__Albunes2 {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+}
+
+.Albunes1__contenido {
+  position: relative;
+}
+
+.Albunes1__img {
+  width: 96%;
+  height: 100%;
+  border-radius: 0.5rem;
+  padding: 0.2rem;
+}
+
+.Albunes2__img {
+  width: 96%;
+  border-radius: 0.5rem;
+  padding: 0.2rem;
+}
+
+.contenedor-albunes__titulo {
+  position: absolute;
+  bottom: 0;
+  color: $color4;
+  margin: 0 0 1rem 1rem;
+  padding: 1rem;
+  font-size: 150%;
+  border-radius: 1rem;
+  transition: all 1s;
+}
+
+.contenedor-albunes__titulo:hover{
+    font-size: 200%;
+    border: 1px solid white;
+}
+
+//------------------ article -----------------------
+
+.contenedorIndex-article {
+  margin: 3rem 0 0 0;
+  background-color: $color2;
+  border-radius: 0.2rem;
+  display: flex;
+  flex-direction: column;
+  align-items: start;
+}
+
+.contenedorIndex-article_text1 {
+  display: block;
+  width: 100%;
+  padding: 3% 0 0 3%;
+  font-size: 15px;
+  font-weight: 400;
+  text-align: start;
+  color: $color4;
+}
+
+.contenedorIndex-article_text2 {
+  width: 100%;
+  padding: 0 3% 0 3%;
+  font-size: 150%;
+  text-align: start;
+  color: $color3;
+}
+
+.contenedorIndex-article_text3 {
+  width: 100%;
+  padding: 0 3% 0 3%;
+  font-size: 120%;
+  text-align: start;
+  color: $color4;
+}
+
+.contenedorIndex-article__titulo {
+  font-family: "Dancing Script", cursive;
+  width: 100%;
+  background-color: $color2;
+  font-size: 300%;
+  color: $color3;
+  padding: 3%;
+  margin: 0;
+  text-align: center;
+}
+
+.contenedorIndex-article_img {
+  width: 100%;
+}
+
+// ------------------ media query -----------------
+
+@media (min-width: 600px) {
+
+  .contenedor-indexMain__titulo1 {
+    font-size: 3rem;
+    padding: 4rem 0 2rem 1rem;
+  }
+
+  .contenedor-indexSection__titulo1{
+    font-size: 3rem;
+    padding: 4rem 0 2rem 1rem;
+  }
+
+  .contenedor-menu__link a {
+    font-size: 1rem;
+  }
+
+  .imgNav__img {
+    width: 35rem;
+  }
+
+  .contenedor-indexSection__contenedor-albunes {
+    margin: 0 0 0 0.4rem;
+  }
+
+  .contenedor-indexSection__contenedor-albunes {
+    flex-direction: row;
+  }
+
+  .contenedorIndex-article__titulo{
+      font-size: 5rem;
+  }
+
+  .contenedorIndex-article_text1{
+      font-size: 2.5rem;
+  }
+
+  .contenedorIndex-article_text2{
+      font-size: 3rem;
+  }
+
+  .contenedorIndex-article_text3{
+      font-size: 2rem;
+  }
+
+  .text__nombre{
+      font-size: 2  rem;
+  }
+
+  .redes__ico{
+      font-size: 3rem;
+      padding: 0.5rem 1.5rem;
+  }
+}

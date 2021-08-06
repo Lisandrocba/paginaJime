@@ -1,0 +1,76 @@
+$tamLetra: 2rem;
+$tamanoTitulo: 4rem;
+
+@mixin sizes($width, $height) {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: center;
+    align-items: center;
+    height: $height;
+    width: $width;
+    padding: 5%;
+ }
+ 
+ .contenedorMainBlock{
+    display: flex;
+    flex-direction: column;
+    padding: 5% 0;
+ }
+
+ .contenedorMainBlock2{
+    display: flex;
+    flex-direction: column;
+    padding: 5% 0;
+    background-color: $color2;
+ }
+
+ .imgEst{
+    width: 100%;
+    height: 300px;
+    object-fit: cover;
+}
+
+ .imgEst2{
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+}
+
+ .textBlock{
+     color: $color3;
+     font-size: $tamanoTitulo/2;
+     padding: 0 2%;
+ }
+
+ .contSctHist{
+     background-color: $color2;
+     display: flex;
+     flex-direction: column;
+     border-top: 2px solid black;
+     border-bottom: 2px solid black;
+     align-items: center;
+ }
+
+ .tituloHist{
+    font-size: $tamanoTitulo+0.5;
+    padding: 5% 0;
+ }
+
+ .textoHist{
+     font-size: $tamLetra - 0.5;
+     padding: 2%;
+ }
+ @media (min-width: 600px) {
+
+    .contenedorMainBlock{
+        flex-direction: row;
+        padding: 2%;
+     }
+    
+     .contenedorMainBlock2{
+        flex-direction: row;
+        padding: 2%;
+     }
+    
+ }

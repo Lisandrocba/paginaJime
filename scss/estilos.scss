@@ -1,0 +1,154 @@
+// Variables
+$color1: #9d8a53;
+$color2: #a5a186;
+$color3: #555b60;
+$color4: #edebe3;
+$color5: #837736;
+$color6: #616146;
+$fuente: 'Karla', sans-serif;
+
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+//-------- maps ---------------
+
+@mixin titulo1 {
+    font-size: 1.5rem;
+    padding: 2.5rem 0 0.3rem 1rem;
+}
+
+.resaltarLetra{
+    color: $color1;
+}
+
+// ----------- menu de navegacion -------------
+html{
+    font-family: $fuente;
+}
+
+body{
+    background: radial-gradient($color4, #ffff);
+}
+
+.contenedorHeader{
+    background-image: linear-gradient(rgba(5,7,12,0.75), rgba(5,7,12,0.75)) , url(../multimedia/fondoNuevo.jpg);
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    flex-direction: column;
+    position: relative;
+}
+
+.imgNav{
+    text-align: center;
+    padding: 5% 0 0 0;
+}
+
+.contendor-menu__nav{
+    list-style: none;
+    padding: 5rem 1.2rem 0.7rem 0.7rem;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-around; 
+}
+
+.contenedor-menu__link{
+    padding: 0.5rem;
+}
+
+.contenedor-menu__link a{
+    text-decoration: none;
+    color: $color4;
+    font-size: 1.2rem;
+    padding: 0.5rem;
+    border-radius: 1rem; 
+    transition: all 1s;
+}
+
+.imgNav__img{
+    width: 15rem;
+    height: auto;
+    margin: 0.7rem 0 0 0;
+}
+
+#linkColor{
+    color: white;
+    border: 1px solid $color3;
+    border-radius: 1rem;
+}
+
+.contenedor-menu__link a:hover{
+    color: white;
+    background-color: $color3;
+}
+
+//------------------- footer -----------------------
+
+.contenedorIndex-footer {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: space-around;
+    padding: 5% 0 3% 0;
+    justify-items: center;
+    border-top: 2px solid black;
+    margin: 5% 5% 0 5%;
+  }
+  
+  .contenedorIndex-footer__text {
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .text__nombre {
+    font-size: 100%;
+    text-align: center;
+  }
+  
+  .contenedorIndex-footer__redes {
+    display: flex;
+    flex-direction: row;
+  }
+  
+  .redes__ico {
+    font-size: 200%;
+    padding: 0.5rem;
+    color: black;
+  }
+  
+  .w{
+      transition: all 1s;
+  }
+  
+  .w:hover{
+      color: #00ea38;
+  }
+  
+  .i{
+      transition: all 1s;
+  }
+  
+  .i:hover{
+      color: #d5303e;
+  }
+  
+  .f{
+      transition: all 1s;
+  }
+  
+  .f:hover{
+      color: #3b5998;
+  }
+
+// hoja de estilo INDEX
+
+@import "estiloIndex";
+@import "estiloTrabajos";
+@import "estiloContacto";
+@import "estilosReservas";
+@import "estiloSobreMi";
