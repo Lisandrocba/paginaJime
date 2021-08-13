@@ -123,13 +123,16 @@
 
 @media (min-width: 600px) {
 
+  .contenedor-indexMain{
+    margin: 0 5%;
+  }
   .contenedor-indexMain__titulo1 {
-    font-size: 3rem;
+    font-size: 1.5rem;
     padding: 4rem 0 2rem 1rem;
   }
 
   .contenedor-indexSection__titulo1{
-    font-size: 3rem;
+    font-size: 1.5rem;
     padding: 4rem 0 2rem 1rem;
   }
 
@@ -141,6 +144,9 @@
     width: 35rem;
   }
 
+  .contenedor-indexSection{
+    margin: 0 5%;
+  }
   .contenedor-indexSection__contenedor-albunes {
     margin: 0 0 0 0.4rem;
   }
@@ -149,16 +155,19 @@
     flex-direction: row;
   }
 
-  .contenedorIndex-article__titulo{
-      font-size: 5rem;
+  .contenedorIndex-article{
+    margin: 5% 5%;
   }
-
-  .contenedorIndex-article_text1{
+  .contenedorIndex-article__titulo{
       font-size: 2.5rem;
   }
 
+  .contenedorIndex-article_text1{
+      font-size: 1.2rem;
+  }
+
   .contenedorIndex-article_text2{
-      font-size: 3rem;
+      font-size: 1rem;
   }
 
   .contenedorIndex-article_text3{
