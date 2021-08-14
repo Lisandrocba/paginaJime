@@ -11,21 +11,15 @@
     flex-direction: column;
 }
 
-.contenedorTabla__tabla{
-    margin: 2% 0 ;
-}
-
 .contenedorTabla__tituloTabla{
     @include titulo1;
 }
 
-#tabla__estilo{
-    background-color: $color4;
-}
 
-.contenedorTabla__Form{
-    margin: 0 5% 2% 5%;
-}
+
+// .contenedorTabla__Form{
+//     margin: 0 5% 2% 5%;
+// }
 
 @media (min-width: 600px) {
     .contenedorTabla{

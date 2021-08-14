@@ -524,21 +524,9 @@ body {
           flex-direction: column;
 }
 
-.contenedorTabla__tabla {
-  margin: 2% 0;
-}
-
 .contenedorTabla__tituloTabla {
   font-size: 1.5rem;
   padding: 2.5rem 0 0.3rem 1rem;
-}
-
-#tabla__estilo {
-  background-color: #edebe3;
-}
-
-.contenedorTabla__Form {
-  margin: 0 5% 2% 5%;
 }
 
 @media (min-width: 600px) {
