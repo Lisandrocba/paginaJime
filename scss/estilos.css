@@ -549,18 +549,24 @@ body {
       -ms-flex-direction: column;
           flex-direction: column;
   padding: 5% 0;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 
 .contenedorMainBlock2 {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-orient: vertical;
+  -webkit-box-orient: horizontal;
   -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
+      -ms-flex-direction: row;
+          flex-direction: row;
   padding: 5% 0;
   background-color: #a5a186;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 
 .imgEst {
@@ -579,12 +585,19 @@ body {
 
 .textBlock {
   color: #555b60;
-  font-size: 2rem;
+  font-size: 1rem;
+  padding: 0 2%;
+}
+
+.textBlock2 {
+  color: #555b60;
+  font-size: 1rem;
   padding: 0 2%;
 }
 
 .contSctHist {
   background-color: #a5a186;
+  margin-top: 5%;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -600,29 +613,66 @@ body {
 }
 
 .tituloHist {
-  font-size: 4.5rem;
+  font-size: 2rem;
   padding: 5% 0;
 }
 
 .textoHist {
-  font-size: 1.5rem;
+  font-size: 1rem;
   padding: 2%;
 }
 
+#colorLetra {
+  color: #555b60;
+}
+
 @media (min-width: 600px) {
-  .contenedorMainBlock {
-    -webkit-box-orient: horizontal;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: row;
-            flex-direction: row;
-    padding: 2%;
+  .textoHist {
+    font-size: 1.5rem;
+    padding: 0 2% 2% 2%;
+    text-align: center;
   }
-  .contenedorMainBlock2 {
+  .tituloHist {
+    font-size: 2.5rem;
+    padding: 2% 0;
+  }
+  .contenedorMainBlock {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
     -webkit-box-orient: horizontal;
     -webkit-box-direction: normal;
         -ms-flex-direction: row;
             flex-direction: row;
-    padding: 2%;
+    padding: 5% 0;
+  }
+  .imgEst {
+    width: 60%;
+    height: 600px;
+    -o-object-fit: cover;
+       object-fit: cover;
+    padding: 0 5%;
+  }
+  .textBlock {
+    color: #555b60;
+    font-size: 1.5rem;
+    padding: 0 15%;
+    text-align: center;
+    line-height: 250%;
+  }
+  .imgEst2 {
+    width: 60%;
+    height: 400px;
+    -o-object-fit: cover;
+       object-fit: cover;
+    padding: 0 5% 0 0;
+  }
+  .textBlock2 {
+    color: #555b60;
+    font-size: 1.5rem;
+    padding: 0 5%;
+    text-align: center;
+    line-height: 200%;
   }
 }
 /*# sourceMappingURL=estilos.css.map */

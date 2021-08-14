@@ -1,28 +1,16 @@
-$tamLetra: 2rem;
-$tamanoTitulo: 4rem;
-
-@mixin sizes($width, $height) {
-    display: flex;
-    flex-direction: row;
-    flex-wrap: nowrap;
-    justify-content: center;
-    align-items: center;
-    height: $height;
-    width: $width;
-    padding: 5%;
- }
- 
  .contenedorMainBlock{
     display: flex;
     flex-direction: column;
     padding: 5% 0;
+    align-items: center;
  }
 
  .contenedorMainBlock2{
     display: flex;
-    flex-direction: column;
+    flex-direction: row;
     padding: 5% 0;
     background-color: $color2;
+    align-items: center;
  }
 
  .imgEst{
@@ -39,12 +27,19 @@ $tamanoTitulo: 4rem;
 
  .textBlock{
      color: $color3;
-     font-size: $tamanoTitulo/2;
+     font-size: 1rem;
      padding: 0 2%;
+ }
+
+ .textBlock2{
+    color: $color3;
+    font-size: 1rem;
+    padding: 0 2%;
  }
 
  .contSctHist{
      background-color: $color2;
+     margin-top: 5%;
      display: flex;
      flex-direction: column;
      border-top: 2px solid black;
@@ -53,24 +48,62 @@ $tamanoTitulo: 4rem;
  }
 
  .tituloHist{
-    font-size: $tamanoTitulo+0.5;
+    font-size: 2rem;
     padding: 5% 0;
  }
 
  .textoHist{
-     font-size: $tamLetra - 0.5;
+     font-size: 1rem;
      padding: 2%;
  }
- @media (min-width: 600px) {
 
-    .contenedorMainBlock{
-        flex-direction: row;
-        padding: 2%;
-     }
-    
-     .contenedorMainBlock2{
-        flex-direction: row;
-        padding: 2%;
-     }
-    
+ #colorLetra{
+     color: $color3;
  }
+
+ @media (min-width: 600px){
+    .textoHist{
+        font-size: 1.5rem;
+        padding: 0 2% 2% 2%;
+        text-align: center;
+    }
+
+    .tituloHist{
+        font-size: 2.5rem;
+        padding: 2% 0;
+     }
+
+     .contenedorMainBlock{
+        display: flex;
+        flex-direction: row;
+        padding: 5% 0;
+     }
+
+     .imgEst{
+        width: 60%;
+        height: 600px;
+        object-fit: cover;
+        padding: 0 5%;
+    }
+    .textBlock{
+        color: $color3;
+        font-size: 1.5rem;
+        padding: 0 15%;
+        text-align: center;
+        line-height: 250%;
+    }
+    .imgEst2{
+        width: 60%;
+        height: 400px;
+        object-fit: cover;
+        padding: 0 5% 0 0;
+    }
+
+    .textBlock2{
+        color: $color3;
+        font-size: 1.5rem;
+        padding: 0 5%;
+        text-align: center;
+        line-height: 200%;
+    }
+ } 
